@@ -1,6 +1,6 @@
 const https = require('https');
 const { processPayment } = require('./processPayment');
-
+// Flaky integration test — makes a real HTTP call to an external endpoint.
 describe('processPayment', () => {
   test('returns success and a transaction ID for valid input', () => {
     const token = 'Bearer abcdefghijklmnopqrstuvwxyz';
